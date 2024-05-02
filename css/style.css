@@ -15,6 +15,11 @@
     color: var(--main-color);
 }
 
+body {
+    display: flex;
+    justify-content: center;
+}
+
 header {
     height: 79px;
     width: 100%;
@@ -29,40 +34,35 @@ main{
     gap: 50px;
 }
 
-.img-container {
+.header__img-container {
     display: flex;
     height: 100%;
     align-items: center;
 }
 
-.img-container img {
+.header__img-container img {
     height: 19px;
     cursor: pointer;
 }
 
-.menu-container {
+.header__menu-container {
     display: flex;
     gap: 68px;
     height: 35px;
     
 }
 
-.menu-container a {
+.header__menu-container a {
     cursor: pointer;
     line-height: 50px;
     border-top: transparent 2px solid;
 }
 
-.menu-container a:hover {
+.header__menu-container a:hover {
     border-top: var(--main-color) 2px solid;
     color: var(--main-color);
 }
 
-
-body {
-    display: flex;
-    justify-content: center;
-}
 
 .main-container {
     width: 100%;
@@ -184,7 +184,6 @@ a {
     justify-content: flex-start;
     gap: 10px;
 }
-
 
 
 /****** Hebergements And Populaires ***********/
@@ -380,9 +379,9 @@ a {
 }
 
 .text-container>h3{
-    width: 100%;
     padding-right: 10px;
     padding-left: 10px;
+    font-size: 16px;
 }
 
 /****** Footer *******/
@@ -447,11 +446,6 @@ footer div{
 
     /*--------activités-------*/
 
-
-    .activity-card h3{
-        font-size: 12px;
-    }
-
     .card-img-container{
         height: 200px;
         width: 100%;
@@ -483,6 +477,13 @@ footer div{
     h2{
         font-size: 22px
     }
+
+    .header__img-container{
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 10px;
+        height: 79px;
+    }
     
     .main-container{
         overflow: hidden;
@@ -490,12 +491,12 @@ footer div{
     }
 
     /***** Menu *****/
-    .menu-container{
+    .header__menu-container{
         gap: 0;
         width: 100%;
     }
 
-    .menu-container >a{
+    .header__menu-container >a{
         width: 100%;
         display: block;
         text-align: center;
@@ -503,7 +504,7 @@ footer div{
         border-bottom: var(--main-bg-color) 2px solid;
     }
 
-    .menu-container a:hover {
+    .header__menu-container a:hover {
         border-top: transparent 2px solid;
         border-bottom: #0065FC 2px solid;
         color: var(--main-color);
@@ -625,13 +626,6 @@ footer div{
         font-size: 16px;
     }
 
-    .img-container{
-        width: 100%;
-        justify-content: center;
-        margin-bottom: 10px;
-        height: 79px;
-    }
-   
 
     /******Footer******/
 
