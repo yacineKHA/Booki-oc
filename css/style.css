@@ -20,6 +20,8 @@ body {
     justify-content: center;
 }
 
+
+
 header {
     height: 79px;
     width: 100%;
@@ -28,7 +30,7 @@ header {
     margin-bottom: 40px;
 }
 
-main{
+main {
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -49,7 +51,7 @@ main{
     display: flex;
     gap: 68px;
     height: 35px;
-    
+
 }
 
 .header__menu-container a {
@@ -130,7 +132,7 @@ a {
     font-size: 18px;
 }
 
-.btn-search-mobile{
+.btn-search-mobile {
     display: none;
 }
 
@@ -154,7 +156,7 @@ a {
     flex-wrap: wrap;
 }
 
-.filter-list{
+.filter-list {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -193,7 +195,7 @@ a {
 }
 
 .hebergements-and-populaires section {
-    
+
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
@@ -323,53 +325,53 @@ a {
 
 /******* Partie activités *******/
 
-.activities{
+.activities {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-.activities>div{
+.activities>div {
     padding-left: 30px;
     padding-right: 30px;
 }
 
-.activities>h2{
-    display: block;
-    width: 100%;
+.activities>div>h2 {
+    margin-bottom: 30px;
 }
 
-.activity-list{
+.activity-list {
     display: flex;
     width: 100%;
     justify-content: space-between;
     gap: 30px;
 }
 
-.activity-card{
+.activity-card {
     display: flex;
     flex-direction: column;
     filter: drop-shadow(2px 5px 5px rgba(0, 0, 0, 0.1));
     max-height: 439px;
     max-width: 297px;
-    aspect-ratio: 297 / 439; /* Maintient le ratio */
+    aspect-ratio: 297 / 439;
+    /* Maintient le ratio */
     overflow: hidden;
     border-radius: 25px;
 
 }
 
-.card-img-container{
+.card-img-container {
     height: 380px;
     width: 100%;
 }
 
-.card-img-container>img{
+.card-img-container>img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.text-container{
+.text-container {
     width: 100%;
     height: 59px;
     display: flex;
@@ -378,14 +380,14 @@ a {
     background-color: white;
 }
 
-.text-container>h3{
+.text-container>h3 {
     padding-right: 10px;
     padding-left: 10px;
     font-size: 16px;
 }
 
 /****** Footer *******/
-footer{
+footer {
     margin-top: 30px;
     height: 163px;
     width: 100%;
@@ -395,11 +397,7 @@ footer{
     align-items: flex-start;
 }
 
-footer a{
-    
-}
-
-footer div{
+footer div {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -407,8 +405,6 @@ footer div{
     padding: 15px;
 }
 
-
-/* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
@@ -446,17 +442,17 @@ footer div{
 
     /*--------activités-------*/
 
-    .card-img-container{
+    .card-img-container {
         height: 200px;
         width: 100%;
     }
 
-    .activity-card{
+    .activity-card {
         height: 270px;
         width: 193px;
     }
 
-    .text-container{
+    .text-container {
         height: 70px;
     }
 }
@@ -466,7 +462,7 @@ footer div{
     /* ... */
 
 
-    header{
+    header {
         flex-direction: column;
         width: 100%;
         overflow: hidden;
@@ -474,29 +470,29 @@ footer div{
         height: 115px;
     }
 
-    h2{
+    h2 {
         font-size: 22px
     }
 
-    .header__img-container{
+    .header__img-container {
         width: 100%;
         justify-content: center;
         margin-bottom: 10px;
         height: 79px;
     }
-    
-    .main-container{
+
+    .main-container {
         overflow: hidden;
         padding: 0;
     }
 
     /***** Menu *****/
-    .header__menu-container{
+    .header__menu-container {
         gap: 0;
         width: 100%;
     }
 
-    .header__menu-container >a{
+    .header__menu-container>a {
         width: 100%;
         display: block;
         text-align: center;
@@ -512,15 +508,15 @@ footer div{
 
     /**** info-group ****/
 
-    .info-group{
-        padding: 20px;      
+    .info-group {
+        padding: 20px;
     }
 
-    .info-group h2{
+    .info-group h2 {
         font-size: 22px;
     }
 
-    .search-bar{
+    .search-bar {
         width: 100%;
     }
 
@@ -531,19 +527,19 @@ footer div{
         padding: 15px;
         cursor: pointer;
         width: fit-content;
-        box-shadow: 0px 3px 4px 0px rgba(0,0,0,0.41);
+        box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.41);
     }
 
-    .btn-search-desktop{
+    .btn-search-desktop {
         display: none;
     }
-    
-    .btn-search-mobile{
+
+    .btn-search-mobile {
         display: inline;
     }
 
-    
-    .filter-list>div{
+
+    .filter-list>div {
         font-size: 14px;
         max-width: 147px;
         flex: 1;
@@ -551,53 +547,53 @@ footer div{
 
     /***** hebergements-and-populaires *****/
 
-    .hebergements-and-populaires{
+    .hebergements-and-populaires {
         flex-direction: column-reverse;
         background-color: white;
     }
 
-    .hebergements-and-populaires section{
+    .hebergements-and-populaires section {
         border-radius: 0px;
-    
+
     }
 
-    .populaires{
+    .populaires {
         margin: 0;
         background-color: var(--main-bg-color);
     }
 
-    .populaires .populaires-cards{
+    .populaires .populaires-cards {
         flex-direction: column;
     }
 
-    .populaires-cards>a{
+    .populaires-cards>a {
         width: 100%;
     }
 
-    .hebergements{
+    .hebergements {
         background-color: white;
     }
 
-    .bedroom-card-list{
+    .bedroom-card-list {
         flex-direction: column;
         width: 100%;
     }
 
-    .bedroom-card{
+    .bedroom-card {
         width: 100%;
     }
 
-    .bedroom-card h3{
+    .bedroom-card h3 {
         font-size: 16px;
     }
 
-    .bedroom-card p{
+    .bedroom-card p {
         font-size: 14px;
     }
 
     /******** Activités *******/
 
-    .activity-list{
+    .activity-list {
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -606,30 +602,30 @@ footer div{
         margin-bottom: 50px;
     }
 
-    .activity-card{
+    .activity-card {
         max-width: 100%;
         width: 100%;
         height: 200px;
     }
 
-    .card-img-container{
+    .card-img-container {
         height: 141px;
         width: 100%;
     }
-    
-    .text-container{
+
+    .text-container {
         width: 100%;
         height: 59px;
     }
 
-    .text-container h3{
+    .text-container h3 {
         font-size: 16px;
     }
 
 
     /******Footer******/
 
-    footer{
+    footer {
         flex-direction: column;
         height: fit-content;
         align-items: flex-start;
@@ -637,11 +633,11 @@ footer div{
         gap: 30px;
     }
 
-    footer h2{
+    footer h2 {
         font-size: 18px;
     }
 
-    footer a{
+    footer a {
         font-size: 16px;
     }
 }
