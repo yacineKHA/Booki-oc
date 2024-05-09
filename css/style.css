@@ -15,25 +15,44 @@
     color: var(--main-color);
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.euro {
+    font-weight: 700;
+}
+
+.neutral-star {
+    color: var(--main-bg-color)
+}
+
+/**************** Body *********************/
+
 body {
     display: flex;
     justify-content: center;
 }
 
+/**************** main-container *************/
+
+.main-container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
 
 
+
+/******************* Header *******************/
 header {
     height: 79px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
 }
 
 .header__img-container {
@@ -65,46 +84,30 @@ main {
     color: var(--main-color);
 }
 
+/******************** Main **********************/
 
-.main-container {
-    width: 100%;
-    max-width: 1440px;
-    padding: 0 50px;
-    box-sizing: border-box;
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 
-a {
-    color: inherit;
-    text-decoration: none;
-}
 
-.euro {
-    font-weight: 700;
-}
-
-.neutral-star {
-    color: var(--main-bg-color)
-}
-
-/***** info-group *****/
+/*************** info-group ************/
 
 .info-group {
     display: flex;
     flex-direction: column;
     gap: 35px;
-    justify-content: center;
-    align-items: flex-start;
 }
 
 .info-group h2 {
     margin-bottom: 10px;
 }
 
+/****/
 .search-bar {
     display: flex;
-}
-
-.search-bar {
     width: 377px;
     height: 49px;
     border-radius: 15px;
@@ -118,6 +121,15 @@ a {
     justify-content: center;
     border-radius: 15px 0 0 15px;
     border: 2px solid var(--main-bg-color);
+}
+
+.search-bar input {
+    border-top: 2px solid var(--main-bg-color);
+    border-bottom: 2px solid var(--main-bg-color);
+    border-left: 0;
+    border-right: 0;
+    padding: 15px;
+    outline: none;
 }
 
 .search-bar button {
@@ -136,18 +148,7 @@ a {
     display: none;
 }
 
-.search-bar input {
-    border-top: 2px solid var(--main-bg-color);
-    border-bottom: 2px solid var(--main-bg-color);
-    border-left: 0;
-    border-right: 0;
-    padding: 15px;
-    outline: none;
-}
-
-.filters-container button:hover {
-    background: var(--filter-bg-color);
-}
+/********************* List-container ********************/
 
 .list-container {
     display: flex;
@@ -158,8 +159,6 @@ a {
 
 .filter-list {
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
     flex-wrap: wrap;
     gap: 10px;
 }
@@ -180,6 +179,8 @@ a {
     background-color: var(--filter-bg-color);
 }
 
+/************************ Infobar *************************/
+
 .infobar {
     display: flex;
     align-items: center;
@@ -195,13 +196,12 @@ a {
 }
 
 .hebergements-and-populaires section {
-
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
 }
 
-/********** Hebergements ***********/
+/************** Hebergements **************/
 .hebergements {
     width: 65%;
     display: flex;
@@ -212,9 +212,6 @@ a {
 
 .bedroom-card-list {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
     flex-wrap: wrap;
     gap: 30px;
 }
@@ -305,7 +302,7 @@ a {
 
 .section-title {
     margin: 0;
-    font-size: 22px;
+    font-size: 24px;
 }
 
 .card {
@@ -327,8 +324,8 @@ a {
 
 .activities {
     display: flex;
-    flex-direction: column;
     width: 100%;
+    flex-direction: column;
 }
 
 .activities>div {
@@ -357,7 +354,6 @@ a {
     /* Maintient le ratio */
     overflow: hidden;
     border-radius: 25px;
-
 }
 
 .card-img-container {
@@ -388,9 +384,9 @@ a {
 
 /****** Footer *******/
 footer {
+    width: 100%;
     margin-top: 30px;
     height: 163px;
-    width: 100%;
     background-color: var(--main-bg-color);
     display: flex;
     justify-content: space-around;
@@ -466,7 +462,6 @@ footer div {
         flex-direction: column;
         width: 100%;
         overflow: hidden;
-        align-items: center;
         height: 115px;
     }
 
@@ -628,8 +623,6 @@ footer div {
     footer {
         flex-direction: column;
         height: fit-content;
-        align-items: flex-start;
-        justify-content: flex-start;
         gap: 30px;
     }
 
